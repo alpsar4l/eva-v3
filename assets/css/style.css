@@ -1,0 +1,32 @@
+/*
+Gilroy ailesinin tüm fertlerini (font ailesi) siteye entegre ettim
+Tasarımda Arial kullanmaktan daha iyidir ve tatlı bişi çok hoş gözüküyor
+*/
+
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url("./assets/fonts/Gilroy-Medium/040a78b437acd0433612f92e61d04a1b.ttf")
+}
+
+@font-face {
+    font-family: "Gilroy-Light";
+    src: url("../../assets/fonts/Gilroy-Light/Gilroy-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Gilroy-Regular";
+    src: url("../../assets/fonts/Gilroy-Regular/Gilroy-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url("../../assets/fonts/Gilroy-Bold/Gilroy-Bold.ttf") format("truetype");
+}
+
+* {
+    padding: 0px;
+}
+
+body {
+    font-family: 'Gilroy-Regular';
+}

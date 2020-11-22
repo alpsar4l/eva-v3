@@ -1,0 +1,6 @@
+RewriteEngine On
+Options -Indexes
+AddDefaultCharset utf-8
+
+RewriteRule ^api/v3/$ api/collect.php [L]
+RewriteRule ^api/v3/update$ api/update.php [L]
