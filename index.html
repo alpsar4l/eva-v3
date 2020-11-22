@@ -26,7 +26,182 @@
 
     <body>
         <main>
+            <div class="contents">
+                <!--
+                    Eva'nın logosunu sayfanın en üstüne yerleştirme
+                -->
+                <div class="page-top">
+                    <img src="assets/images/logo.png" alt="Electric Vehicle of Altinbas logo (7000x7000)">
+                </div>
 
+                <!--
+                    Hız bilgisinin yansıtalacağı yer
+                -->
+                <div class="box">
+                    <div class="box-title">
+                        #<b>speed</b>
+                    </div>
+                    <div class="purple">
+                        <div class="purple-content">
+                            <div class="content">
+                                <div class="sc-gauge">
+                                    <div class="sc-background">
+                                        <div class="sc-percentage"></div>
+                                        <div class="sc-mask"></div>
+                                        <span class="sc-value">0</span>
+                                    </div>
+                                    <span class="sc-min">0</span>
+                                    <span class="sc-max">180</span>
+                                </div>
+                            </div>
+                            <div class="speed-details">
+                                <span class="last-update-text-title">Last update</span>
+                                <br>
+                                <span id="speed-lu" class="last-update-text-speed">2030, 0:00 AM</span>
+                            </div>
+                        </div>
+                    </div>                        
+                </div>
+                
+                <!--
+                    Voltaj bilgisinin yansıtalacağı yer
+                -->
+                <div class="box">
+                    <div class="box-title">
+                        #<b>voltage</b>
+                    </div>
+                    <div class="light-blue">
+                        <div class="content">
+                            <div class="content-svg">
+                                <svg viewBox="0 0 192 192"><path d="m155.109 74.028a4 4 0 0 0 -3.48-2.028h-52.4l8.785-67.123a4.023 4.023 0 0 0 -7.373-2.614l-63.724 111.642a4 4 0 0 0 3.407 6.095h51.617l-6.962 67.224a4.024 4.024 0 0 0 7.411 2.461l62.671-111.63a4 4 0 0 0 .048-4.027z"/></svg>
+                            </div>
+                            <div class="content-text">
+                                <div>
+                                    <span id="voltage-value">0</span>
+                                </div>
+                                <div>
+                                    <span id="voltage-lu" class="last-update-text">2030, 0:00 AM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                        
+                </div>
+
+                <!--
+                    Batarya bilgisinin yansıtalacağı yer
+                -->
+                <div class="box">
+                    <div class="box-title">
+                        #<b>battery</b>
+                    </div>
+                    <div class="green">
+                        <div class="battery-area">
+                            <div class="battery-preview">
+                                <div class="battery">
+                                    <div class="battery-fill"></div>
+                                </div>
+                            </div>
+                            <div class="battery-details">
+                                <div class="battery-details-content">
+                                    <div>
+                                        <svg class="battery-logo" viewBox="0 0 24 24"><path d="m22.241 7h-.241v-.25c0-1.517-1.234-2.75-2.75-2.75h-16.5c-1.516 0-2.75 1.233-2.75 2.75v9.5c0 1.517 1.234 2.75 2.75 2.75h16.5c1.516 0 2.75-1.233 2.75-2.75v-.25h.241c.965 0 1.75-.785 1.75-1.75v-5.5c0-.965-.785-1.75-1.75-1.75zm-8.324 3.77-3.496 5.499c-.093.147-.254.231-.421.231-.057 0-.114-.01-.169-.029-.22-.08-.356-.301-.327-.533l.43-3.438-1.438-.002c-.188 0-.359-.105-.444-.271-.085-.167-.071-.367.038-.52l3.576-4.999c.135-.188.384-.258.598-.171.215.089.34.314.303.543l-.479 2.92 1.408.002c.183 0 .35.1.438.26.087.159.081.354-.017.508z"/></svg>
+                                    </div>
+                                    <div class="b-value">
+                                        <span id="battery-value">40%</span><br>
+                                        <span id="battery-lu" class="last-update-text">2030, 0:00 AM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                        
+                </div>
+
+                <!--
+                    Sıcaklık bilgilerinin yansıtalacağı yer
+                    Motor, batarya ve hücreler (?)
+                -->
+                <div class="box">
+                    <div class="box-title">
+                        #<b>tempatures</b>
+                    </div>
+                    <div class="temp">
+                        <div class="orange">
+                            <div class="temp-area">
+                                <div class="temp-rating">
+                                    <div class="temp-top">
+                                        <div id="temp-1" class="temp-top-fill"></div>
+                                    </div>
+                                    <div class="temp-bottom"></div>
+                                </div>
+                                <div class="temp-details">
+                                    <div class="temp-details-name">
+                                        <span>
+                                            <b>engine</b>
+                                        </span>
+                                    </div>
+                                    <div class="temp-details-value">
+                                        <span>
+                                            <b id="temp-1-value" class="temp-value">0°C</b>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="orange">
+                            <div class="temp-area">
+                                <div class="temp-rating">
+                                    <div class="temp-top">
+                                        <div id="temp-2" class="temp-top-fill"></div>
+                                    </div>
+                                    <div class="temp-bottom"></div>
+                                </div>
+                                <div class="temp-details">
+                                    <div class="temp-details-name">
+                                        <span>
+                                            <b>battery</b>
+                                        </span>
+                                    </div>
+                                    <div class="temp-details-value">
+                                        <span>
+                                            <b id="temp-2-value" class="temp-value">0°C</b>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="orange">
+                            <div class="temp-area">
+                                <div class="temp-rating">
+                                    <div class="temp-top">
+                                        <div id="temp-3" class="temp-top-fill"></div>
+                                    </div>
+                                    <div class="temp-bottom"></div>
+                                </div>
+                                <div class="temp-details">
+                                    <div class="temp-details-name">
+                                        <span>
+                                            <b>cells</b>
+                                        </span>
+                                    </div>
+                                    <div class="temp-details-value">
+                                        <span>
+                                            <b id="temp-3-value" class="temp-value">0°C</b>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="temp-lu">
+                        <span id="temp-lu" class="last-update-text">2030, 0:00 AM</span>
+                    </div>
+                </div>
+
+                <br><br>
+            </div>
         </main>
     </body>
 </html>

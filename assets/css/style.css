@@ -5,7 +5,7 @@ Tasarımda Arial kullanmaktan daha iyidir ve tatlı bişi çok hoş gözüküyor
 
 @font-face {
     font-family: "Gilroy-Medium";
-    src: url("./assets/fonts/Gilroy-Medium/040a78b437acd0433612f92e61d04a1b.ttf")
+    src: url("../../assets/fonts/Gilroy-Medium/040a78b437acd0433612f92e61d04a1b.ttf")
 }
 
 @font-face {
@@ -29,4 +29,321 @@ Tasarımda Arial kullanmaktan daha iyidir ve tatlı bişi çok hoş gözüküyor
 
 body {
     font-family: 'Gilroy-Regular';
+    background: #f3f3f5;
+}
+
+b {
+    font-family: 'Gilroy-Medium';
+}
+
+.contents {
+    max-width: 700px;
+    position: relative;
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+
+.box {
+    background: #fff;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 4px 20px rgba(19,20,21,.1);
+    box-shadow: 0 4px 20px rgba(19,20,21,.1);
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.box-title {
+    font-size: 26px;
+    font-family: 'Gilroy-Light';
+    padding: 20px;
+}
+
+.temp {
+    display: flex;
+    padding: 12px;
+    margin-top: -25px;
+}
+
+.orange {
+    background: rgb(243, 159, 90);
+    background: linear-gradient(270deg, rgb(243, 159, 90) 0%, rgb(255, 186, 107) 100%);
+    border-radius: 20px;
+    -webkit-box-shadow: 0 4px 20px rgba(19,20,21,.1);
+    box-shadow: 0 4px 20px rgba(19,20,21,.1);
+    width: 33.3333333333%;
+    margin: 10px 10px;
+    padding: 10px;
+    height: 300px;
+} 
+
+.purple {
+    color: black;
+    border-radius: 20px;
+    background: rgb(176, 115, 255);
+    background: linear-gradient(270deg, rgb(188, 136, 255) 0%, rgb(159, 86, 255) 100%); 
+}
+
+.green {
+    color: black;
+    border-radius: 20px;
+    background: rgb(19, 139, 99);
+    background: linear-gradient(270deg, rgb(20, 170, 120) 0%, rgb(33, 221, 158) 100%); 
+}
+
+.light-blue {
+    color: black;
+    border-radius: 20px;
+    background: rgb(88,228,213);
+    background: linear-gradient(270deg, rgba(88,228,213,1) 0%, rgba(105,157,224,1) 100%); 
+}
+
+.battery-area {
+    padding: 30px;
+    height: 150px;
+}
+
+.battery-preview {
+    width: 100%;
+}
+
+.battery-details {
+    margin: 20px 0px;
+}
+
+#battery-value {
+    font-size: 40px;
+    font-family: 'Gilroy-Bold';
+}
+
+.battery {
+    width: 100%;
+    height: 35px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.438);
+}
+
+.battery-fill {
+    background: black;
+    border-radius: 30px;
+    width: 30%;
+    height: 35px;
+    transition-duration: .1s;
+}
+
+.temp-lu {
+    padding: 0px 20px 20px 20px;
+}
+
+.battery-details-content {
+    display: flex;
+}
+
+.battery-logo {
+    height: 53px;
+}
+
+.b-value {
+    margin: 4px 15px;
+}
+
+.content {
+    padding: 30px 15px;
+    display: flex;
+}
+
+.content-text {
+    margin-left: 10px;
+}
+
+.content-svg svg {
+    height: 80px;
+}
+
+#voltage-value {
+    font-size: 40px;
+    font-family: 'Gilroy-Bold';
+}
+
+.sc-gauge {
+    width: 200px;
+    margin: 0px auto;
+    border-radius: 20px;
+    font-family: 'Gilroy-Bold';
+}
+
+.sc-background {
+    position: relative;
+    height: 100px;
+    margin-bottom: 10px;
+    background-color: #ffffff4d;
+    border-radius: 150px 150px 0 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.sc-mask {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    height: 80px;
+    background-color: rgb(165, 97, 255);
+    border-radius: 150px 150px 0 0;
+}
+
+.sc-percentage {
+    position: absolute;
+    top: 100px;
+    left: -200%;
+    width: 400%;
+    height: 400%;
+    margin-left: 100px;
+    background-color: #000000;
+    border-radius: 20px;
+}
+
+.speed-details {
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+    margin: 55px 20px;
+    height: max-content;
+}
+
+.purple-content {
+    display: flex;
+    padding: 0px 30px;
+}
+
+.last-update-text-title {
+    font-size: 16px;
+    font-family: 'Gilroy-Medium';
+}
+
+.last-update-text {
+    font-size: 23px;
+    font-family: 'Gilroy-Medium';
+}
+
+.last-update-text-speed {
+    font-size: 20px;
+    font-family: 'Gilroy-Medium';
+}
+
+.sc-percentage {
+    transform: rotate(5deg);
+    transition-duration: .1s;
+    transform-origin: top center;
+}
+
+.sc-min {
+    float: left;
+}
+
+.sc-max {
+    float: right;
+}
+
+.sc-value {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    font-size: 48px;
+    font-weight: 700;
+}  
+
+.temp-rating {
+    width: 60px;
+    margin: 0px auto;
+}
+
+.temp-top {
+    background: rgba(255, 255, 255, 0.356);
+    height: 145px;
+    width: 15px;
+    margin: 0px 0px -7px 23.5px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.temp-top-fill {
+    background: rgb(0, 0, 0);
+    width: 15px;
+    border-radius: 20px;
+    height: 20%;
+    min-height: 15%;
+    transition-duration: .1s;
+    max-height: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+.temp-bottom {
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    background: black;
+}
+
+.temp-area {
+    padding: 15px 0px;
+}
+
+.temp-details {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.temp-details-name {
+    font-size: 19px;
+}
+
+.temp-details-value {
+    margin-top: 5px;
+}
+
+.temp-value {
+    font-size: 30px;
+    font-family: 'Gilroy-Bold';
+}
+
+.page-top {
+    text-align: center;
+}
+
+.page-top img {
+    height: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+    .purple-content {
+        display: inline;
+    }
+
+    .page-top {
+        margin-top: 6px;
+    }
+
+    .box {
+        margin-top: 15px;
+    }
+
+    .page-top img {
+        height: 70px;
+    }
+
+    .speed-details {
+        text-align: center;
+        margin-top: -20px;
+    }
+    
+    .sc-mask {
+        background-color: rgb(173, 110, 255);
+    }
+
+    .temp-value {
+        font-size: 26px;
+    }
 }
