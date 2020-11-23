@@ -22,6 +22,9 @@
 
         <!-- Kendi javascript dosyamızı siteye entegre ediyoruz, böylece scriptlerimizi sayfamızda kullanabileceğiz -->
         <script src="js/main.js"></script>
+
+        <!-- Yandex harita servisini siteye entegre ediyoruz, böylece aracın nerede olduğunu takip edebileceğiz -->
+        <script src="https://api-maps.yandex.ru/2.1/?lang=en_RU" type="text/javascript"></script>
     </head>
 
     <body>
@@ -112,6 +115,21 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>                        
+                </div>
+
+                <!--
+                    Konum bilgisinin yansıtalacağı yer
+                -->
+                <div class="box">
+                    <div class="box-title">
+                        #<b>location</b><br>
+                        <span id="geo-lu" class="last-update-text-speed">2030, 0:00 AM</span>
+                    </div>
+                    <div class="map">
+                        <div id="yandex_map">
+                            <div id="map"></div>
                         </div>
                     </div>                        
                 </div>
